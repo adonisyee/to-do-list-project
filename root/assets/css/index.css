@@ -1,0 +1,99 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(65, 81, 99);
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(222, 120, 0);
+    font-size: 2.3em;
+    margin: 0 auto;
+    padding: 20px 30px 10px;
+}
+
+ul {
+    color: white;
+    font-size: 1.2em;
+    margin: 0 30px;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+li:hover .exitButton {
+    display: inline;
+}
+
+input[type="text"] {
+    color: rgb(222, 120, 0);
+    font-family: inherit;
+    font-size: 1.3em;
+    background: transparent;
+    border: none;
+    width: 100%;
+    min-height: 30px;
+}
+
+input[type="text"]:focus {
+    background: transparent;
+    border: none;
+    outline-width: 0;
+}
+
+#container {
+    background-color: rgb(76, 121, 163);
+    max-width: 60%;
+    min-width: 250px;
+    margin: 3% 20%;
+    border-radius: 2em;
+    padding-bottom: 10px;
+}
+
+#addButton {
+    color: rgb(222, 120, 0);
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 50%;
+    border: none;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+#addBar {
+    background-color: white;
+    padding: 0 10px;
+}
+
+.fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity .5s;
+    -webkit-transition: visibility 0s linear 0s, opacity .5s;
+    -moz-transition: visibility 0s linear 0s, opacity 300ms;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: visibility 0s linear .5s, opacity .5s;
+    -webkit-transition: visibility 0s linear .5s, opacity .5s;
+    -moz-transition: visibility 0s linear .5s, opacity .5s;
+    visibility: hidden;
+}
+
+.linethrough {
+    text-decoration: line-through;
+}
+
+.exitButton {
+    display: none;
+    color: rgb(222, 120, 0);
+    font-weight: 700;
+    font-size: 1em;
+    border: none;
+    background: none;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
