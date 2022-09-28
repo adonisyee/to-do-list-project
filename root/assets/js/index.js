@@ -51,7 +51,6 @@ const removeListItem = function() {
     }
     this.parentNode.remove()
     localStorage.setItem("toDoArray", JSON.stringify(toDoArray))
-    // localStorage.setItem("toDoList", JSON.stringify(toDoList));
 }
 
 const addListItem = function(e) {
